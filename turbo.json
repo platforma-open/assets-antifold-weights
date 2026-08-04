@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["tsconfig.json"],
+  "tasks": {
+    "build": {
+      "env": ["CI"],
+      "inputs": ["$TURBO_DEFAULT$"],
+      "outputs": ["./dist/**", "./indexed_model/**"],
+      "dependsOn": ["^build"]
+    },
+    "upload-packages": {
+      "dependsOn": ["build", "^upload-packages"]
+    }
+  }
+}

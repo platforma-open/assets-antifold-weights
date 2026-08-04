@@ -1,0 +1,12 @@
+{
+  "base_url": "https://opig.stats.ox.ac.uk/data/downloads/AntiFold/models",
+  "target_dir": "antifold",
+  "files": [
+    "model.pt"
+  ],
+  "url_suffix": "",
+  "expected_bytes": {
+    "model.pt": 566838063
+  },
+  "_comment": "AntiFold inverse-folding checkpoint. url_suffix must stay \"\": the script defaults it to \"?download=1\", a Zenodo convention that 404s against this direct OPIG path. expected_bytes was read from the live content-length header; a different size means upstream replaced the file, so re-verify before changing the number."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@platforma-open/milaboratories.antifold-weights-assets",
+  "version": "1.0.0",
+  "description": "AntiFold model weights assets catalogue",
+  "scripts": {
+    "cleanup": "rm -rf ./pkg-*.tgz && rm -rf ./dist/",
+    "build": "pl-pkg build"
+  },
+  "block-software": {
+    "entrypoints": {
+      "antifold": {
+        "reference": "@platforma-open/milaboratories.antifold-weights-assets.antifold/dist/tengo/asset/main.as.json"
+      }
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@platforma-open/milaboratories.antifold-weights-assets.antifold": "workspace:*"
+  },
+  "devDependencies": {
+    "@platforma-sdk/package-builder": "catalog:"
+  }
+}

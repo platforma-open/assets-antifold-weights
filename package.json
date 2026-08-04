@@ -1,0 +1,20 @@
+{
+  "name": "antifold-weights-assets",
+  "scripts": {
+    "cleanup": "pnpm -r cleanup",
+    "build": "turbo run build --log-order=stream --env-mode=loose",
+    "test": "./scripts/download-weights.test.sh",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
+  },
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@9.14.4",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "turbo": "catalog:",
+    "@changesets/cli": "catalog:"
+  },
+  "//pnpm": {}
+}
