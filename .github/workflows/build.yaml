@@ -29,6 +29,9 @@ jobs:
       pnpm-recursive-build: false
       test: true
       test-script-name: 'test'
+      # 'test' is a root shell suite, not a turbo task, so the turbo dry-run
+      # cache probe has no 'test' task to inspect and its script does not exist.
+      test-skip-dry-run: true
       pnpm-recursive-tests: false
       team-id: 'ciplopen-assets-antifold-weights'
 
