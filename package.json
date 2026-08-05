@@ -1,5 +1,6 @@
 {
   "name": "antifold-weights-assets",
+  "private": true,
   "scripts": {
     "cleanup": "pnpm -r cleanup",
     "build": "turbo run build --log-order=stream --env-mode=loose",
