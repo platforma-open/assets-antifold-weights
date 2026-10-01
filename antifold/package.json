@@ -1,6 +1,7 @@
 {
   "name": "@platforma-open/milaboratories.antifold-weights-assets.antifold",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "AntiFold inverse-folding model checkpoint (opig.stats.ox.ac.uk, license unresolved — see LICENSE-NOTES.md)",
   "scripts": {
     "cleanup": "rm -rf ./pkg-*.tgz ./pkg-*.zip && rm -rf ./build/ && rm -rf ./dist/ && rm -rf ./indexed_model/",

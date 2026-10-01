@@ -16,7 +16,7 @@
   "files": [
     "dist/"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "@platforma-open/milaboratories.antifold-weights-assets.antifold": "workspace:*"
   },
